@@ -1,0 +1,41 @@
+<%= form_for(@teacher) do |f| %>
+  <% if @teacher.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
+
+      <ul>
+      <% @teacher.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <fieldset class="form-group">
+      <%= f.label :firstname %><br>
+      <%= f.text_field :firstname, class: "form-control", placeholder: "Firstname", "aria-describedby": "basic-addon1" %>
+  </fieldset>
+
+  <fieldset class="form-group">
+      <%= f.label :lastname %><br>
+      <%= f.text_field :lastname, class: "form-control", placeholder: "Firstname", "aria-describedby": "basic-addon1" %>
+  </fieldset>
+  
+  <fieldset class="form-group">
+      <%= f.label :CIN %><br>
+      <%= f.text_field :CIN, class: "form-control", placeholder: "Firstname", "aria-describedby": "basic-addon1" %>
+  </fieldset>
+  
+  <fieldset class="form-group">
+      <%= f.label :email %><br>
+      <%= f.text_field :email, class: "form-control", placeholder: "Firstname", "aria-describedby": "basic-addon1" %>
+  </fieldset>
+  
+  <fieldset class="form-group">
+    <%= f.label :phone_id %><br>
+    <%= f.text_field :phone_id %>
+  </fieldset>
+  <div class="actions">
+    <%= f.submit "submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
