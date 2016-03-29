@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :schedules
+  resources :day_of_weeks
+  resources :age_of_students
+  resources :student_levels
+  resources :type_of_classes
   resources :teachers
   resources :phones
   # The priority is based upon order of creation: first created -> highest priority.

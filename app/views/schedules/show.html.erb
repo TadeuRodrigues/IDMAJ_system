@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Teacher:</strong>
+  <%= @schedule.teacher %>
+</p>
+
+<p>
+  <strong>Type of class:</strong>
+  <%= @schedule.type_of_class %>
+</p>
+
+<p>
+  <strong>Age of student:</strong>
+  <%= @schedule.age_of_student %>
+</p>
+
+<p>
+  <strong>Time in:</strong>
+  <%= @schedule.time_in %>
+</p>
+
+<p>
+  <strong>Time out:</strong>
+  <%= @schedule.time_out %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedule) %> |
+<%= link_to 'Back', schedules_path %>

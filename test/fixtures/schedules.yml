@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  teacher_id: 
+  type_of_class_id: 
+  age_of_student_id: 
+  time_in: 2016-03-29 19:31:13
+  time_out: 2016-03-29 19:31:13
+
+two:
+  teacher_id: 
+  type_of_class_id: 
+  age_of_student_id: 
+  time_in: 2016-03-29 19:31:13
+  time_out: 2016-03-29 19:31:13

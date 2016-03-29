@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Age Of Students</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Age</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @age_of_students.each do |age_of_student| %>
+      <tr>
+        <td><%= age_of_student.age %></td>
+        <td><%= link_to 'Show', age_of_student %></td>
+        <td><%= link_to 'Edit', edit_age_of_student_path(age_of_student) %></td>
+        <td><%= link_to 'Destroy', age_of_student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Age of student', new_age_of_student_path %>
