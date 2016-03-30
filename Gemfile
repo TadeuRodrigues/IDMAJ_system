@@ -26,11 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'puma', '3.2.0'
 
-gem 'bootstrap', '~> 4.0.0.alpha3'
+#gem 'bootstrap', '~> 4.0.0.alpha3'
 
-source 'https://rails-assets.org' do
-  gem 'rails-assets-tether', '>= 1.1.0'
-end
+#source 'https://rails-assets.org' do
+#  gem 'rails-assets-tether', '>= 1.1.0'
+#end
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
